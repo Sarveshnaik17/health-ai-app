@@ -7,6 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import time
 import random
+import os
 
 # =====================================================
 # PAGE CONFIG
@@ -34,7 +35,7 @@ model = load_model()
 # =====================================================
 # MONGODB CONNECTION
 # =====================================================
-MONGO_URI = "mongodb+srv://sarvesh:srushti10@cluster0.eehrxev.mongodb.net/?appName=Cluster0"
+MONGO_URI = os.getenv("MONGO_URI") 
 
 @st.cache_resource
 def get_db():
@@ -398,4 +399,4 @@ else:
         st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
-
+
