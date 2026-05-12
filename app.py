@@ -35,7 +35,7 @@ model = load_model()
 # =====================================================
 # MONGODB CONNECTION
 # =====================================================
-MONGO_URI = os.getenv("MONGO_URI") 
+MONGO_URI = "mongodb+srv://sarvesh:srushti10@cluster0.eehrxev.mongodb.net/?appName=Cluster0" 
 
 @st.cache_resource
 
