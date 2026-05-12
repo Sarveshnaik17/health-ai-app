@@ -38,6 +38,7 @@ model = load_model()
 MONGO_URI = os.getenv("MONGO_URI") 
 
 @st.cache_resource
+
 def get_db():
     try:
         client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
