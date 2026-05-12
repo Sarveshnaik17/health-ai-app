@@ -1,0 +1,73 @@
+{
+  "trained_at": "2026-04-29T22:50:10.313992",
+  "feature_names": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Glucose_BMI",
+    "Age_Pregnancies",
+    "Insulin_Glucose_Ratio",
+    "BMI_Age",
+    "HighGlucose",
+    "HighBMI"
+  ],
+  "raw_feature_names": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "metrics": {
+    "accuracy": 0.9948,
+    "precision": 0.9889,
+    "recall": 0.9963,
+    "f1_score": 0.9926,
+    "roc_auc": 0.9998,
+    "confusion_matrix": [
+      [
+        497,
+        3
+      ],
+      [
+        1,
+        267
+      ]
+    ]
+  },
+  "cv_metrics": {
+    "accuracy_mean": 0.825,
+    "accuracy_std": 0.0268,
+    "f1_mean": 0.8336,
+    "f1_std": 0.0244,
+    "roc_auc_mean": 0.895,
+    "roc_auc_std": 0.0186
+  },
+  "feature_importance": {
+    "Glucose_BMI": 0.1911,
+    "Glucose": 0.168,
+    "BMI_Age": 0.1252,
+    "BMI": 0.0892,
+    "Age": 0.0814,
+    "DiabetesPedigreeFunction": 0.0554,
+    "Age_Pregnancies": 0.0507,
+    "Insulin": 0.0499,
+    "Insulin_Glucose_Ratio": 0.0458,
+    "HighGlucose": 0.0379,
+    "SkinThickness": 0.0358,
+    "BloodPressure": 0.0346,
+    "Pregnancies": 0.0231,
+    "HighBMI": 0.0118
+  },
+  "dataset_size": 768,
+  "smote_size": 1000,
+  "model_type": "VotingEnsemble(XGBoost+RF+GBM)"
+}
